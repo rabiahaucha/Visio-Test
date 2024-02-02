@@ -1,19 +1,26 @@
-$(document).ready( function () {
-    $(".next").on("click", function () {
-        let TopImg = $(".active")
-        let underImg = TopImg.next()
-
-        let numbering = $(this).data("count") || 0
-        $(this).data("count", ++numbering)
-        console.log(numbering);
-        
-        if (underImg.length) {
-            TopImg.removeClass("active").css("z-index", -10)
-            underImg.addClass("active").css("z-index", 10)
+$(document).ready(function(){
+    $('.next').on('click', function(){
+    var currentImg = $('.active');
+    var nextImg = currentImg.next();
+    if(nextImg.length){
+        currentImg.removeClass().css('z-index', -10);
+        nextImg.addClass('active').css('z-index', 10);
+    }
+    });
+    $('.prev').on('click', function(){
+        var currentImg = $('.active');
+        var prevImg = currentImg.prev();
+        if(prevImg.length){
+            currentImg.removeClass().css('z-index', -10);
+            prevImg.addClass('active').css('z-index', 10);
         }
-
-        if (numbering>3) {
-            location.reload()
-        }
-    })
-})
+        });
+        $('.next').on('click', function(){
+            var currentSVG = $('.activeSVG');
+            var nextSVG = currentSVG.next();
+            if(nextSVG.length){
+                currentSVG.removeClass();
+                nextSVG.addClass('activeSVG');
+            }
+            });
+  });
