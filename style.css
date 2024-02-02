@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: 0.4s;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+
+.logo {
+  width: 15%;
+  height: 15%;
+  padding: 1rem;
+}
+
+.burger {
+  width: 110px;
+  height: 90px;
+  padding-top: 1rem;
+}
+
+.middle {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+.visiop {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 500px;
+  font-size: 25px;
+}
+
+.icons {
+  width: 24em;
+}
+
+.main-image {
+  width: 100%;
+  padding: 5rem;
+  margin-top: -5rem;
+  z-index: -1;
+}
+.innner-image {
+  overflow: hidden;
+}
+.innner-image img {
+  display: none;
+}
+.innner-image img.active {
+  display: inline-block;
+}
+
+.next {
+  position: absolute;
+  z-index: 3;
+  width: 13rem;
+  cursor: pointer;
+  margin-top: 25rem;
+  margin-left: 100rem;
+}
+
+.banner {
+  color: white;
+  background-color: #244ac2;
+  width: 35rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 95%;
+  padding-left: 1rem;
+  position: absolute;
+  z-index: 2;
+  margin-top: 33rem;
+}
+
+.text1 {
+  margin-top: -5rem;
+  padding: 3rem;
+}
