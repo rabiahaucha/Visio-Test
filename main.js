@@ -1,26 +1,21 @@
-$(document).ready(function(){
-    $('.next').on('click', function(){
-    var currentImg = $('.active');
-    var nextImg = currentImg.next();
-    if(nextImg.length){
-        currentImg.removeClass().css('z-index', -10);
-        nextImg.addClass('active').css('z-index', 10);
-    }
-    });
-    $('.prev').on('click', function(){
+$(document).ready(function () {
+ 
+    $('.slider-inner img:first-child').addClass('active').css('z-index', 10);
+
+    $('.next').on('click', function () {
         var currentImg = $('.active');
-        var prevImg = currentImg.prev();
-        if(prevImg.length){
+        var nextImg = currentImg.next();
+
+        if (nextImg.length) {
             currentImg.removeClass().css('z-index', -10);
-            prevImg.addClass('active').css('z-index', 10);
+            nextImg.addClass('active').css('z-index', 10);
+        } else {
+      
+            $('.slider-inner img').removeClass().css('z-index', -10);
+            $('.slider-inner img:first-child').addClass('active').css('z-index', 10);
         }
-        });
-        $('.next').on('click', function(){
-            var currentSVG = $('.activeSVG');
-            var nextSVG = currentSVG.next();
-            if(nextSVG.length){
-                currentSVG.removeClass();
-                nextSVG.addClass('activeSVG');
-            }
-            });
-  });
+    });
+
+
+});
+

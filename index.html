@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VISIO</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" ></script>
 </head>
 
@@ -14,9 +15,9 @@
 <header>  <nav>
     <div class="navbar">
         <a href="" class="logo">
-            <img src="./assests/image/logo one.png">
+            <img src="./assests/image/logo one.png"  loading="lazy">
         </a>
-        <a href="#" class="logo-button">
+        <a href="#" class="logo-button" style="margin-top: 1rem;">
             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50">
                 <path d="M 5 8 A 2.0002 2.0002 0 1 0 5 12 L 45 12 A 2.0002 2.0002 0 1 0 45 8 L 5 8 z M 5 23 A 2.0002 2.0002 0 1 0 5 27 L 45 27 A 2.0002 2.0002 0 1 0 45 23 L 5 23 z M 5 38 A 2.0002 2.0002 0 1 0 5 42 L 45 42 A 2.0002 2.0002 0 1 0 45 38 L 5 38 z"></path>
                 </svg>
@@ -27,17 +28,24 @@
         <section class="banner">
             <div class="container">
                 <div class="slider-outer">
-                    <div class="blue-banner">
+                    <div class="blue-text">
                         <p>LOOK BEYOND THE ORDINARY</p>
                     </div>
                     <div class="slider-inner">
-                        <img src="./assests/image/dan-formsma--9SsJ2jHnkg-unsplash.jpg" class="active">
-                        <img src="./assests/image/dan-formsma--9SsJ2jHnkg-unsplash.jpg">
-                        <img src="./assests/image/chloe-leis-Q1Ka2cD9XSY-unsplash.jpg">
+                        <img src="./assests/image/dan-formsma--9SsJ2jHnkg-unsplash.jpg" class="active" loading="lazy">
+                        <img src="./assests/image/david-gavi-Xh_yj0ZYKyA-unsplash.jpg" loading="lazy">
+                        <img src="./assests/image/chloe-leis-Q1Ka2cD9XSY-unsplash.jpg" loading="lazy">
+                        <img src="./assests/image/rene-padillo-GyUoN-opIMM-unsplash.jpg" loading="lazy">
                     </div>
-                    <img src="./assests/image/Screenshot_2024-01-15_140806-removebg-preview.png" alt="next" class="next">
-                    <img src="https://visiofund.co.za/wp-content/themes/visio/images/slider-dots.svg" class="sirc">
-                    <div class="black-banner"></div>
+                    <img src="./assests/image/Screenshot_2024-01-15_140806-removebg-preview.png" alt="next" class="next" >
+                    <div class="pagination">
+                        <span class="active" rel="1"></span>
+                        <span class rel="2"></span>
+                        <span class rel="3"></span>
+                        <span class rel="4"></span>
+                    </div>
+                  
+                    <div class="black-divbox"></div>
                 </div>
             </div>
          </section>
@@ -50,7 +58,7 @@
                     includes some of the world's largest and most sophisticated investors.</p>
             </div>
                 <div class="icons">
-                    <img src="./Assets/Screenshot 2024-01-30 131132.png" alt="">
+                    <img src="./assests/image/icons.png" alt="icons" loading="lazy">
                 </div>
     
         </div>
@@ -58,48 +66,47 @@
   <section>
     <div class="card-container">
         <div class="card">
-            <div class="inner-card">
-                <img src="./assests/image/visio__3___1_-removebg-preview.png" alt="">
+            <div class="inner-slider">
+                <img src="./assests/image/visio__3___1_-removebg-preview.png" alt="card" loading="lazy">
                 <h2 class="card-text">The visio<br>
                     difference</h2>
             </div>
             <div class="buttons-container">
-                <div class="buttons">
-                    <p>Hedge Funds </p> <img src="./assests/image/visio__3___1_-removebg-preview.png" alt="btn-svg">
+                <div class="box-blue">
+                    <p>Hedge Funds </p> <img src="./assests/image/visio__3___1_-removebg-preview.png" alt="btn-svg" loading="lazy">
                 </div>
-                <div class="buttons">
-                    <p>Unit trusts </p><img src="./assests/image/visio__3___1_-removebg-preview.png" alt="btn-svg">
+                <div class="box-blue">
+                    <p>Unit trusts </p><img src="./assests/image/visio__3___1_-removebg-preview.png" alt="btn-svg" loading="lazy">
                 </div>
             </div>
         </div>
         <div class="card">
-            <div class="inner-card">
-                <img src="./assests/image/visio__3___1_-removebg-preview.png" alt="">
+            <div class="inner-slider">
+                <img src="./assests/image/visio__3___1_-removebg-preview.png" alt="card" loading="lazy">
                 <h2 class="card-text">Meet the<br>
                     visio team</h2>
             </div>
             <div class="buttons-container">
-                <div class="buttons">
-                    <p>Segregated Mandates </p> <img src="./assests/image/visio__3___1_-removebg-preview.png"
-                        alt="btn-svg">
+                <div class="box-blue">
+                    <p>Segregated Mandates </p> <img src="./assests/image/visio__3___1_-removebg-preview.png" alt="btn-svg" loading="lazy">
                 </div>
-                <div class="buttons">
-                    <p>Africa Funds </p> <img src="./assests/image/visio__3___1_-removebg-preview.png" alt="btn-svg">
+                <div class="box-blue">
+                    <p>Africa Funds </p> <img src="./assests/image/visio__3___1_-removebg-preview.png" alt="btn-svg" loading="lazy">
                 </div>
             </div>
         </div>
         <div class="card">
-            <div class="inner-card">
-                <img src="./assests/image/visio__3___1_-removebg-preview.png" alt="">
+            <div class="inner-slider">
+                <img src="./assests/image/visio__3___1_-removebg-preview.png" alt="card" loading="lazy">
                 <h2 class="card-text">Our funds and<br>
                     investments</h2>
             </div>
             <div class="buttons-container">
-                <div class="buttons">
-                    <p>Fund Performance</p> <img src="./assests/image/visio__3___1_-removebg-preview.png" alt="btn-svg">
+                <div class="box-blue">
+                    <p>Fund Performance</p> <img src="./assests/image/visio__3___1_-removebg-preview.png" alt="btn-svg" loading="lazy">
                 </div>
-                <div class="buttons">
-                    <p>Risk Management </p> <img src="./assests/image/visio__3___1_-removebg-preview.png" alt="btn-svg">
+                <div class="box-blue">
+                    <p>Risk Management </p> <img src="./assests/image/visio__3___1_-removebg-preview.png" alt="btn-svg" loading="lazy">
                 </div>
             </div>
         </div>
